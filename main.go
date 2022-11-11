@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"math"
 	"math/rand"
 	"os"
 	"os/signal"
@@ -48,7 +49,7 @@ func showMem() {
 func genMem(total, block int) {
 	// allocate memory 1MB at a time
 	rand.Seed(time.Now().UTC().UnixNano())
-	loop := total / block
+	loop := int(math.Ceil(float64(total) / float64(block)))
 	var res = make([][]byte, loop)
 	for i := 0; i < loop; i++ {
 		blockMB := block * 1024 * 1024
