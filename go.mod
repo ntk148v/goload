@@ -1,3 +1,3 @@
-module github.com/ntk148v/golang-template
+module github.com/ntk148v/goload
 
-go 1.17
+go 1.18
