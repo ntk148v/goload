@@ -22,6 +22,8 @@
 	</p><br>
 </div>
 
+Inspired by [golang-memtest](https://github.com/fabianlee/golang-memtest) & [go-cpu-load](https://github.com/vikyd/go-cpu-load/).
+
 ## Install
 
 ```shell
